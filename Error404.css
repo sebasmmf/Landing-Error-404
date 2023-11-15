@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+:root {
+    /* Typography */
+    --main-typography: 'Kdam Thmor Pro', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #213A40;
+    font-family: var(--main-typography);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-Error404 {
+    height: 400px;
+    width: 400px;
+}
+
+.error-description h1, p {
+    margin: 20px;
+    padding-right: 30px;
+}
+
+.error-description p {
+    color: grey;
+}
+
+.error-description button {
+    height: 40px;
+    width: 160px;
+    margin: 20px;
+
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #f2f2f2;
+    background-color: #0583F2;
+    
+}
+
+.error-description button:hover {
+    background-color: #213A40;
+    transition: background-color 1s;
+}
+
+footer {
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: gray;
+    font-size: 12px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:730px) {
+    main {
+        flex-direction: column;
+    }
+
+    .image-Error404 {
+        height: 250px;
+        width: 250px;
+    }
+
+    .error-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .error-description h1, p, button {
+        margin: 10px;
+    }
+
+    .error-description h1 {
+        padding-right: 0px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .error-description p {
+        padding-right: 0px;
+        font-size: 12px;
+        text-align: center;
+
+    }
+
+    .error-description button {
+        height: 36px;
+        width: 120px;
+        font-size: 10px;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+}
